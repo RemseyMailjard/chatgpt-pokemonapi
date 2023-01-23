@@ -57,13 +57,21 @@
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3">My Pokemon App</h1>
                     <h2>Developed by Remsey Mailjard and ChatGPT</h2>
-                    <div class="container">
+                    <div id="pokemonContainer">
 
                     </div>
+
+                    <form onsubmit="return false" method="POST">
+                        <label for="pokeName">Pokémon Name // Pokémon ID</label>
+                        <input type="text" name="pokeName" id="pokeName" onClick="this.select();">
+                        <input type="submit" value="Search" id="searchButton">
+                    </form>
                 </div>
 
             </div>
         </div>
+
+
     </main>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
